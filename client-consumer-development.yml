@@ -1,11 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
 
 server:
-  port: 8082
-
-spring:
-  application:
-    name: customer-producer
+  port: 8083
