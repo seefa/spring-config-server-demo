@@ -3,7 +3,7 @@ server:
   port: 8761
 eureka:
   server:
-    enable-self-preservation: false  #Turn off self-protection
+    enable-self-preservation: true  #Turn off self-protection
     waitTimeInMsWhenSyncEmpty: 0
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
@@ -19,7 +19,7 @@ eureka:
 ---
 eureka:
   server:
-    enable-self-preservation: false  #Turn off self-protection
+    enable-self-preservation: true  #Turn off self-protection
     waitTimeInMsWhenSyncEmpty: 0
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
