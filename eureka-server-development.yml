@@ -1,6 +1,8 @@
 ---
 spring:
-  profiles: tehran
+  config:
+    activate:
+      on-profile: tehran
 server:
   port: 8761
 eureka:
