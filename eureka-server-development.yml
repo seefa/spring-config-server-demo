@@ -1,6 +1,6 @@
 ---
-server:
-  port: 8761
+#server:
+#  port: 8761
 eureka:
   server:
     enable-self-preservation: true  #Turn off self-protection
