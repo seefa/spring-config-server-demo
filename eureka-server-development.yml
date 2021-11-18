@@ -14,7 +14,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://tehran.seefa.ir:8761/eureka/
+      defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
 
 ---
 server:
@@ -32,4 +32,4 @@ eureka:
     serviceUrl:
       registerWithEureka: true
       fetchRegistry: true
-      defaultZone: http://tehran.seefa.ir:8761/eureka/
+      defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
