@@ -1,9 +1,14 @@
-server:
-  port: 8761
-
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
   server:
+    enable-self-preservation: false  #Turn off self-protection
     waitTimeInMsWhenSyncEmpty: 0
+    eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 20
+    lease-renewal-interval-in-seconds: 5
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka, http://localhost:8763/eureka
