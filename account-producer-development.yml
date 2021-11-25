@@ -1,9 +1,4 @@
 spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: account-producer
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,9 +9,6 @@ spring:
     password: HeyCrazyPass1398
 
 eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
