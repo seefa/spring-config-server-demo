@@ -23,7 +23,7 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
-    hostname: esfahan
+    hostname: esfahan.seefa.ir
     lease-expiration-duration-in-seconds: 120
     lease-renewal-interval-in-seconds: 60
   client:
