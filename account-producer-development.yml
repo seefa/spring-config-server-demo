@@ -9,6 +9,9 @@ spring:
     password: HeyCrazyPass1398
 
 eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    non-secure-port: 0
   client:
     serviceUrl:
       defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
