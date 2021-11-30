@@ -1,4 +1,0 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://tehran.seefa.ir:8761/eureka/, http://esfahan.seefa.ir:8762/eureka/
