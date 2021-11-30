@@ -3,8 +3,8 @@
 #  port: 8761
 eureka:
   server:
-    enable-self-preservation: true  #Turn off self-protection
-    waitTimeInMsWhenSyncEmpty: 0
+#    enable-self-preservation: true  #Turn off self-protection
+    waitTimeInMsWhenSyncEmpty: 30
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
     hostname: tehran.seefa.ir
@@ -19,8 +19,8 @@ eureka:
 ---
 eureka:
   server:
-    enable-self-preservation: true  #Turn off self-protection
-    waitTimeInMsWhenSyncEmpty: 0
+#    enable-self-preservation: true  #Turn off self-protection
+    waitTimeInMsWhenSyncEmpty: 30
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
     hostname: esfahan.seefa.ir
