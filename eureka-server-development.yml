@@ -8,8 +8,8 @@ eureka:
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
     hostname: tehran.seefa.ir
-    lease-expiration-duration-in-seconds: 30
-    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 1
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -20,12 +20,12 @@ eureka:
 eureka:
   server:
 #    enable-self-preservation: true  #Turn off self-protection
-    waitTimeInMsWhenSyncEmpty: 5
+    waitTimeInMsWhenSyncEmpty: 3
     eviction-interval-timer-in-ms: 4000 #Set the cleaning interval (unit: default is 60*1000 in milliseconds)
   instance:
     hostname: esfahan.seefa.ir
-    lease-expiration-duration-in-seconds: 30
-    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 1
   client:
     serviceUrl:
       registerWithEureka: true
